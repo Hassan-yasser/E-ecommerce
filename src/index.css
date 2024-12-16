@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.active {
+    color: rgb(0, 204, 0);
+  }
+  .active:hover {
+    color: rgb(0, 204, 0) !important;
+  }
+  @layer components {
+    .inputs {
+      @apply outline-none border-opacity-35 border-gray-300 rounded-md py-2 px-3 focus:outline-none  bg-slate-200 text-gray-700 font-semibold 
+    }
+    .addBtn {
+      @apply bg-vip rounded-md text-white outline-none py-1 px-2 hover:bg-green-700 hover:text-gray-300 transition-all duration-500  
+    }
+
+  } 
+
+  /* HTML: <div class="loader"></div> */
+.loader {
+  width: 20px;
+  aspect-ratio: 1;
+  animation: l13-0 2s linear infinite;
+}
+.loader::before,
+.loader::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: radial-gradient(at 30% 30%,#0000,#000a) rgb(0, 204, 0);
+  animation: l13-1 0.5s cubic-bezier(.5,-500,.5,500) infinite;
+}
+.loader::after {
+  animation-delay: -0.15s;
+}
+@keyframes l13-0 { 
+  100% { transform:rotate(360deg)} 
+}
+@keyframes l13-1 { 
+  100% { transform:translate(0.5px)} 
+}
+
+
+
