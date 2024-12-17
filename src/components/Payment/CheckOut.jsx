@@ -99,7 +99,7 @@ let formik = useFormik({
     <title>Fresh Payment</title>
   </Helmet>
   <section>
-    <h2 className='flex items-center text-3xl gap-3 font-bold'><i class="fa-solid fa-basket-shopping text-vip"></i> Payment</h2>
+    <h2 className='flex items-center text-3xl gap-3 font-bold'><i className="fa-solid fa-basket-shopping text-vip"></i> Payment</h2>
 
 
     <form className='mt-10 flex flex-col gap-5' onSubmit={formik.handleSubmit}>

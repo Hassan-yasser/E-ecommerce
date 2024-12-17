@@ -147,8 +147,8 @@ OpenNavbuttn()
                     <Link to={`/allorders`} className="transition-colors duration-500 block px-4 py-2 hover:bg-gray-100 ay-600 white hover:text-gray-500">Dashboard</Link>
                   </li>
                   <li className='relative flex items-center justify-between px-5 pt-4'>
-          <NavLink to={`/Cart`} className="transition-colors duration-500 block py-2 px-3 text-gray-900 rounded   md:p-0  ay-700 white md:ansparent hover:text-gray-500 "><i class="fa-solid fa-cart-shopping "></i> {NumOfItems === 0 ? "" : <span className='bg-vip text-white rounded-full w-6 h-5 flex justify-center items-center absolute -top-[2px] left-[16px] text-sm'>{NumOfItems}</span>}</NavLink>
-          <NavLink to={`/BestProducts`} className="transition-colors duration-500 block py-2 px-3 text-gray-900 rounded   md:p-0  ay-700 white md:ansparent hover:text-gray-500 "><i class="fa-solid fa-heart "></i> {NumOfItems === 0 ? "" : <span className='bg-vip text-white rounded-full w-6 h-5 flex justify-center items-center absolute -top-[2px] left-[16px] text-sm'>{NumOfItems}</span>}</NavLink>
+          <NavLink to={`/Cart`} className="transition-colors duration-500 block py-2 px-3 text-gray-900 rounded   md:p-0  ay-700 white md:ansparent hover:text-gray-500 "><i className="fa-solid fa-cart-shopping "></i> {NumOfItems === 0 ? "" : <span className='bg-vip text-white rounded-full w-6 h-5 flex justify-center items-center absolute -top-[2px] left-[16px] text-sm'>{NumOfItems}</span>}</NavLink>
+          <NavLink to={`/BestProducts`} className="transition-colors duration-500 block py-2 px-3 text-gray-900 rounded   md:p-0  ay-700 white md:ansparent hover:text-gray-500 "><i className="fa-solid fa-heart "></i> {NumOfItems === 0 ? "" : <span className='bg-vip text-white rounded-full w-6 h-5 flex justify-center items-center absolute -top-[2px] left-[16px] text-sm'>{NumOfItems}</span>}</NavLink>
         </li>
                   
         </> : ""}

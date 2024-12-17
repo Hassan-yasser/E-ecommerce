@@ -29,7 +29,7 @@ export default function BestCategory() {
           <img src={product.imageCover} className='w-full object-cover' alt="" />
           <div className='flex justify-center items-center gap-5 absolute top-0 left-0 right-0 bottom-0 bg-slate-100 opacity-0 group-hover:opacity-95 transition-all duration-500 cursor-pointer'>
               <Link to={`/ProductsDetails/${product.id}/${product.category.name}`}><span className='flex justify-center items-center w-12 h-12 bg-vip rounded-full hover:bg-green-800 transition-all duration-500'><i className="fa-solid fa-eye text-white"></i></span></Link>
-              <span onClick={()=>{AddToCart(product.id)}} className='flex justify-center items-center w-12 h-12 bg-vip rounded-full hover:bg-green-800 transition-all duration-500'><i class="fa-solid fa-cart-arrow-down text-white"></i></span>
+              <span onClick={()=>{AddToCart(product.id)}} className='flex justify-center items-center w-12 h-12 bg-vip rounded-full hover:bg-green-800 transition-all duration-500'><i className="fa-solid fa-cart-arrow-down text-white"></i></span>
               {isFavorite? <>
                     <span onClick={()=>{
                       DeleteProductFromFev(product.id)

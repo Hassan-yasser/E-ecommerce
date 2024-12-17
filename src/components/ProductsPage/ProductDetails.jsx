@@ -51,7 +51,7 @@ setProduct(Resolved?.data?.data)
            
             <span className='flex gap-3 items-center'>
             <span className='font-black'>Discount</span> :
-              <i class="fa-solid fa-tags text-green-600 mt-1"></i>
+              <i className="fa-solid fa-tags text-green-600 mt-1"></i>
               <span className='font-bold text-green-500'>{product.priceAfterDiscount} EGP</span>
               <del className='text-red-600'>{product.price}</del> 
             </span>
@@ -63,7 +63,7 @@ setProduct(Resolved?.data?.data)
 
             <div className='flex gap-5 mt-5'>
               <button className='addBtn px-5' onClick={()=>{AddToCart(product?.id)}}>Add To Cart</button>
-              {isFavorite? <><button onClick={()=>{DeleteProductFromFev(product?.id)}} className='addBtn bg-red-600 hover:bg-red-700 px-10'><i class="fa-solid fa-bookmark"></i></button></> :<><button onClick={()=>{AddProductToFev(product?.id)}} className='addBtn px-10'><i class="fa-solid fa-bookmark"></i></button></>}
+              {isFavorite? <><button onClick={()=>{DeleteProductFromFev(product?.id)}} className='addBtn bg-red-600 hover:bg-red-700 px-10'><i className="fa-solid fa-bookmark"></i></button></> :<><button onClick={()=>{AddProductToFev(product?.id)}} className='addBtn px-10'><i className="fa-solid fa-bookmark"></i></button></>}
               
             </div>
             <div className=' h-[200px] mt-5'>

@@ -50,7 +50,7 @@ export default function AllOrders() {
         return <div className='grid grid-cols-12 col-span-12 bg-white shadow-lg rounded-md overflow-hidden px-5 py-3'> 
               {order.cartItems?.length > 0 ? <>
                 <div className='flex items-center justify-between col-span-12'>
-                  <h2 className='text-xl font-bold'>{order.isPaid === true ? <i className="fa-solid fa-circle-check text-vip"></i> : <i class="fa-solid fa-circle-check text-red-600"></i>} Paid</h2>
+                  <h2 className='text-xl font-bold'>{order.isPaid === true ? <i className="fa-solid fa-circle-check text-vip"></i> : <i className="fa-solid fa-circle-check text-red-600"></i>} Paid</h2>
                   <h2 className='text-gray-700 font-bold ms-12 '>total Price : <span className='text-green-600 font-black'>{order.totalOrderPrice } L.E</span></h2>
                   <h2 className='text-gray-500'>{new Date(order.createdAt).toDateString()}</h2>
                 </div>

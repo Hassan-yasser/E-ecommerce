@@ -2,9 +2,6 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 
 export default function CartItem({ProductInfo,DeleteFn,EditCount}) {
-
-    
-    // let {DeleteProduct} = DeleteFn
     let {count,price,product} = ProductInfo
     let {imageCover,title,id,ratingsAverage} = product
   return <>
